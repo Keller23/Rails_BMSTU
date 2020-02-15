@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Лабораторная работа 3</title>
+    <style>
+      .table {
+        display: table;
+        padding: 8px;
+      }
+
+      .row {
+        display: table-row;
+      }
+
+      .cell {
+        display: table-cell;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="form_submit" method="get">
+      <div class="table">
+        <div class="row">
+          <label class="cell">Логин:</label>
+          <input type="text" name="login" /><br />
+        </div>
+        <div class="row">
+          <label class="cell">Пароль:</label>
+          <input type="text" name="password" /><br />
+        </div>
+        <div class="row">
+          <label class="cell">Фамилия:</label>
+          <input type="text" name="lname" /><br />
+        </div>
+        <div class="row">
+          <label class="cell">Имя:</label>
+          <input type="text" name="fname" /><br />
+        </div>
+        <div class="row">
+          <label class="cell">Год рождения:</label>
+          <select id="year">
+            <option>1998</option>
+            <option>1999</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option> </select
+          ><br />
+        </div>
+        <div class="row">
+          <label class="cell">Пол:</label>
+          <label><input type="radio" name="gender" value="м" />м</label>
+          <label><input type="radio" name="gender" value="ж" />ж</label> <br />
+        </div>
+      </div>
+      <input type="submit" value="Отправить" />
+    </form>
+    <div>
+      <ul>
+        <li id="d0"></li>
+      </ul>
+    </div>
+    <script>
+      function print_html(path) {
+        temp = path.tagName;
+        console.log("Вошли в " + path.tagName);
+        if (path.childElementCount > 0) {
+          temp += "<ul>";
+          for (let i = 0; i < path.children.length; i++)
+            temp += "<li>" + print_html(path.children[i]) + "<\/li>";
+          temp += "<\/ul>";
+        }
+        console.log("Вышли из " + path.tagName);
+        return temp;
+      }
+      document.getElementById("d0").innerHTML += print_html(
+        document.documentElement
+      );
+    </script>
+  </body>
+</html>

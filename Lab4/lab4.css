@@ -1,0 +1,24 @@
+.hd { 
+	font-weight: bold; 
+}
+.table {
+	display: table;
+	border: 1px solid green;
+}
+.row, .row2 {
+	display: table-row;
+}
+.row2 {
+	cursor: pointer;
+}
+.cell, .cost{
+	display: table-cell;
+	border: 1px solid purple;
+}
+.cost:hover, .row2:hover{
+	background-color: aqua;
+}
+div {
+	margin: 8px; 
+	padding: 2px;
+}

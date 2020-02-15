@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="windows-1251">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICS6 Bootstrap</title>
+  <link href="http://e-learning.bmstu.ru/moodle/pluginfile.php/754
+6/mod_folder/content/0/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      position: relative;
+      min-height: 100%;
+    }
+
+    body {
+      margin-bottom: 40px;
+    }
+
+    main {
+      margin-top: 15px;
+    }
+
+    footer {
+      height: 40px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .my-primary {
+      background-color: darkkhaki;
+      color: white;
+    }
+  </style>
+  <style type="text/css">
+    p {
+      font-family: Times New Roman;
+      font-size: 16pt;
+      color: Black;
+    }
+
+    h3 {
+      font-family: Arial Black;
+      font-size: 20pt;
+      color: Blue;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="row">
+      <div class="col-4">
+        <img src=" http://e-learning.bmstu.ru/moodle/pluginfile.php/7546/
+mod_folder/content/0/avatar.jpg" alt="avatar" width="150" height="150">
+      </div>
+      <div class="col-8">
+        <p><span style="font-size:22pt;color:steelblue">Лабораторная Работа 2</span>
+          <br /><span style="color:olive">Задание 3 и Задание 4</span></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+        <form>
+          <div class="form-group row">
+            <label for="inputlogin" class="col-sm-2 col-form-label"><strong>Login:</strong></label>
+            <div class="col-sm-10">
+              <input type="login" class="form-control" id="inputlogin">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label"><strong>Pass:</strong></label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputfirst" class="col-sm-2 col-form-label"><strong>First:</strong></label>
+            <div class="col-sm-10">
+              <input type="first" class="form-control" id="inputfirst">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputlast" class="col-sm-2 col-form-label"><strong>Last:</strong></label>
+            <div class="col-sm-10">
+              <input type="last" class="form-control" id="inputlast">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputage" class="col-sm-2 col-form-label"><strong>Age:</strong></label>
+            <div class="col-sm-10">
+              <input type="age" class="form-control" id="inputage">
+            </div>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">m</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">f</label>
+          </div>
+          <br />
+          <button type="submit" class="btn btn-primary mb-2">Register</button>
+        </form>
+      </div>
+      <div class="col-4 offset-md-3 item">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">№</th>
+              <th scope="col">Имя</th>
+              <th scope="col">Фамилия</th>
+              <th scope="col">Группа</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Василий</td>
+              <td>Пупкин</td>
+              <td>ИУ6-35Б</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Иван</td>
+              <td>Иванов</td>
+              <td>ИУ6-35Б</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Андрей</td>
+              <td>Золкин</td>
+              <td>ИУ6-35Б</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>«Московский государственный <span style="font-family:Complex;font-size:30pt;color:red">технический
+            университет</span> имени Н.Э. Баумана» </i></h3>
+        <p>(МГТУ им. Н.Э. Баумана) </p>
+        <p> ФАКУЛЬТЕТ ИНФОРМАТИКА И СИСТЕМЫ УПРАВЛЕНИЯ </p>
+        <p> КАФЕДРА КОМПЬЮТЕРНЫЕ СИСТЕМЫ И СЕТИ (ИУ6) </p>
+        <h3>О т ч е т</h3>
+        <p> по лабораторной работе №1 </p>
+        <p> Дисциплина: Языки интернет-программирования </p>
+        <p> Название лабораторной работы: ЛР 1 </p>
+        <p> Студент гр. ИУ6-35Б Золкин А.Н. </p>
+        <p><span style="font-size:10pt">(Подпись,дата) (И.О.Фамилия)</span></p>
+        <p> Преподаватель </p>
+        <p><span style="font-size:10pt">(Подпись,дата) (И.О.Фамилия)</span> </p>
+        <p>Москва, 2019</p>
+      </div>
+    </div>
+  </main>
+  <footer class="my-primary">
+    <div class="container">
+      <p class="footer-text">Footer</p>
+    </div>
+  </footer>
+</body>
+
+</html>

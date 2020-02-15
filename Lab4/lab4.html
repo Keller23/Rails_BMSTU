@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Лабораторная работа 4.</title>
+    <link rel="stylesheet" href="lab4.css" />
+    <script src="lab4.js"></script>
+  </head>
+  <body>
+    <form class="row">
+      <label>Наименование:</label>
+      <input type="text" id="lname" />
+      <label>Цена(руб):</label>
+      <input type="text" id="cost" />
+      <button type="button" onclick="add2()">Добавить в список</button>
+      <br /><br />
+      <div class="row"><mark>Список товаров:</mark></div>
+      <div
+        class="table"
+        title="Нажмите на строчку, чтобы добавить в заказ"
+        id="t0"
+      >
+        <div class="row2">
+          <div class="cell"><span class="hd">Товары</span></div>
+          <div class="cell"><span class="hd">Цена, руб</span></div>
+        </div>
+        <div
+          class="row2"
+          onclick="add(children[0].innerText, children[1].innerText)"
+        >
+          <div class="cell">
+            Смартфон Apple iPhone 11 64GB Black (MWLT2RU/A)
+          </div>
+          <div class="cost">59990</div>
+        </div>
+        <div
+          class="row2"
+          onclick="add(children[0].innerText, children[1].innerText)"
+        >
+          <div class="cell">Смартфон Samsung Galaxy S9+ 64Gb</div>
+          <div class="cost">45990</div>
+        </div>
+        <div
+          class="row2"
+          onclick="add(children[0].innerText, children[1].innerText)"
+        >
+          <div class="cell">Смартфон Xiaomi Mi Note 10 Pro 256GB</div>
+          <div class="cost">44990</div>
+        </div>
+        <div
+          class="row2"
+          onclick="add(children[0].innerText, children[1].innerText)"
+        >
+          <div class="cell">Смартфон Honor 20S 128GB</div>
+          <div class="cost">19990</div>
+        </div>
+      </div>
+      <div class="table" id="t1">
+        <div class="row"><mark>Заказ</mark></div>
+        <div class="row">
+          <div class="cell"><span class="hd">Товары</span></div>
+          <div class="cell"><span class="hd">Цена</span></div>
+          <div class="cell"><span class="hd">Количество</span></div>
+        </div>
+      </div>
+      <button type="button" onclick="summ()">Расчет стоимости</button>
+    </form>
+  </body>
+</html>
